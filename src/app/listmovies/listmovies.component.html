@@ -1,0 +1,14 @@
+<div class="section">
+  <table class="table table-striped">
+    <tr>
+      <th>Title</th>
+      <th>Release Year</th>
+      <th>Rating</th>
+    </tr>
+    <tr *ngFor="let item of moviesDB">
+      <td>{{ item.title }}</td>
+      <td>{{ item.year }}</td>
+      <td>{{ item.rating }}</td>
+    </tr>
+  </table>
+</div>

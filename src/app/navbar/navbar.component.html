@@ -1,0 +1,15 @@
+<nav
+  id="navbar"
+  class="navbar navbar-dark navbar-expand-sm bg-dark justify-content-center"
+>
+  <ul class="navbar-nav">
+    <li *ngFor="let navitem of navdata" class="nav-item">
+      <a
+        routerLink="{{ navitem.link }}"
+        routerLinkActive="active"
+        class="nav-link"
+        >{{ navitem.name }}</a
+      >
+    </li>
+  </ul>
+</nav>
